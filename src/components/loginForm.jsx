@@ -1,13 +1,31 @@
 import React from "react";
 import { useState } from "react";
+import axios from "axios"
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
+    const Navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(`email: ${email} \nSenha:${senha}`)
+        try {
+            const response = await axios.post("http://localhost:5000/api/auth/login", {
+                email,
+                password: senha 
+            })
+            const userData = response.data;
+            localStorage.setItem("user", JSON.stringify(userData))
+            alert("usuário logado com sucesso!!")
+            Navigate("/")
+        } catch (error) {
+            if(error.response){
+                alert("Erro ao logar usuário, email ou senha incorretos ")
+            }else{
+                alert("erro ao conectar ao servidor")
+            }
+          }
     }
 
     return (
