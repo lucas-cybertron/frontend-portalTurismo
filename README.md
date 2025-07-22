@@ -1,12 +1,34 @@
-# React + Vite
+# 🌄 Serra Lima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Serra Lima** é um site institucional construído com **React**, **Vite** e **Tailwind CSS**. Ele apresenta páginas de serviços, informações institucionais e uma galeria com carrossel interativo utilizando a biblioteca **[Swiper.js](https://swiperjs.com/)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Rotas do Projeto
 
-## Expanding the ESLint configuration
+O projeto possui as seguintes páginas:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🏠 `/` – **Home**: Apresentação da empresa e destaques.
+- 🛠️ `/servicos` – **Serviços**: Lista de serviços com slider.
+- ℹ️ `/sobre` – **Sobre**: História e missão da empresa.
+- 📞 `/contato` – **Contato**: Formulário para envio de mensagens.
+- 🖼️ `/galeria` – **Galeria de Serviços**: Imagens em carrossel (Swiper).
+
+---
+
+## 🧑‍💻 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swiper.js](https://swiperjs.com/)
+- [React Router DOM](https://reactrouter.com/) (para navegação entre rotas)
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+### 1. Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/serra-lima.git
+cd serra-lima
