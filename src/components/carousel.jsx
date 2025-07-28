@@ -1,5 +1,5 @@
 import React from "react";
-import CardService from "./cardservice";
+import CardService from "../components/cardService";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
