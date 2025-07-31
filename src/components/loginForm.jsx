@@ -15,7 +15,7 @@ const LoginForm = () => {
 
     try {
       // Faz a requisição POST para o login na API
-      const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("https://backend-portalturismo-tyu9.onrender.com/api/auth/login", {
         email,
         password: senha, // campo esperado pelo backend é "password"
       });

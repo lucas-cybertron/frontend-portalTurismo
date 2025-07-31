@@ -11,7 +11,7 @@ const RegisterForm = () => {
 
         try {
             // Envia requisição POST para criar usuário
-            const response = await axios.post("http://localhost:5000/api/users", {
+            const response = await axios.post("https://backend-portalturismo-tyu9.onrender.com/api/users", {
                 name: nome,
                 email,
                 password : senha

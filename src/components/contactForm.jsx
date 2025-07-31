@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     try {
       // Requisição POST para o endpoint do servidor
-      const response = await axios.post("http://localhost:5000/api/contacts", {
+      const response = await axios.post("https://backend-portalturismo-tyu9.onrender.com/api/contacts", {
         name: formData.name,
         email: formData.email,
         message: formData.message,
